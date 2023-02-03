@@ -1,0 +1,32 @@
+.partner {
+  height: 168px;
+  display: flex;
+  align-items: center;
+  padding-left: 284px;
+  padding-right: 284px;
+  background: #f4f5f9;
+}
+
+.partner-item:not(:last-child) {
+  margin-right: 40px;
+}
+.partner-item {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+  .partner {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .partner {
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .partner-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}

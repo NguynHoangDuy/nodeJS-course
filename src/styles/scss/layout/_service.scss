@@ -1,0 +1,84 @@
+.f-24 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #353945;
+}
+.service {
+  background: #3b71fe;
+}
+.service-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service-item {
+  width: calc((100% / 4) - 35px);
+  padding: 25px 28px 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.color-white {
+  color: #ffffff;
+}
+
+.service-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item:first-child > .service-img {
+  background: #3b71fe;
+}
+
+.service-item:nth-child(2) > .service-img {
+  background: #58c27d;
+}
+
+.service-item:nth-child(3) > .service-img {
+  background: #fa8f54;
+}
+
+.service-item:last-child > .service-img {
+  background: #ffd166;
+}
+
+@media screen and (max-width: 1439px) {
+  .min-h {
+    min-height: 64px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .service-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  .min-h {
+    min-height: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-item {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+  }
+  .service-group {
+    align-items: center;
+    justify-content: center;
+  }
+  .min-h {
+    min-height: unset;
+  }
+}

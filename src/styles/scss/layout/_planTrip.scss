@@ -1,0 +1,159 @@
+.plan_trip {
+  padding: 70px 0px;
+  &-group {
+    margin-left: 282px;
+    margin-right: 282px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &-item {
+    width: calc((100% / 3) - 20px);
+    padding: 21px 35px;
+    border-radius: 12px;
+  }
+  &-item:first-child {
+    background: #eef9f2;
+    .plan_trip-icon {
+      background-color: #58c27d;
+    }
+  }
+  &-item:nth-child(2) {
+    background: #fff4ee;
+    .plan_trip-icon {
+      background: #fa8f54;
+    }
+  }
+  &-item:last-child {
+    background: #ebf1ff;
+    .plan_trip-icon {
+      background: #3b71fe;
+    }
+  }
+  &-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+
+  &-content {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #353945;
+    margin-bottom: 28px;
+  }
+
+  &-link {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #353945;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.text-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #23262f;
+  margin-bottom: 24px;
+}
+.text-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #353945;
+}
+
+.icon-arrow {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1439px) {
+  .plan_trip {
+    &-content {
+      min-height: 130px;
+    }
+  }
+}
+@media screen and (max-width: 1279px) {
+  .plan_trip {
+    padding: 50px 0 25px;
+    &-group {
+      margin-left: 42px;
+      margin-right: 42px;
+      margin-top: 40px;
+    }
+    &-content {
+      min-height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 911px) {
+  .plan_trip {
+    &-content {
+      min-height: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .plan_trip {
+    &-group {
+      overflow: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    &-item {
+      margin-right: 20px;
+      width: calc((90%) - 20px);
+      flex-shrink: 0;
+    }
+    &-item:last-child {
+      margin-right: 0px;
+    }
+    &-content {
+      min-height: unset;
+    }
+  }
+  .text-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .text-desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .plan_trip {
+    &-content {
+      min-height: 110px;
+    }
+  }
+}

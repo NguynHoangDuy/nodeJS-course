@@ -1,0 +1,32 @@
+{
+  "name": "nodejs_course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect ./src/index.js ",
+    "convert-style": "sass --watch ./src/styles/scss/:./src/styles/css/",
+    "dev": "npm-run-all --parallel start convert-style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguynHoangDuy/nodeJS-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguynHoangDuy/nodeJS-course/issues"
+  },
+  "homepage": "https://github.com/NguynHoangDuy/nodeJS-course#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-sass": "^8.0.0",
+    "pug": "^3.0.2",
+    "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5"
+  }
+}
